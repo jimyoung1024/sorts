@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-        int[] a = {3, 2, 5, 2, 5, 6, 23, 3, 4, 5, 93};
+        int[] a = {3, 299, 5, 2, 5, 6, 23, 3, 4, 5, 93};
         MergeSort_NonRec.mergeSort(a);
         System.out.print(Arrays.toString(a));
     }

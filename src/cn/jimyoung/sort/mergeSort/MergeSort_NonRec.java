@@ -4,7 +4,7 @@ public class MergeSort_NonRec {
     public static void mergeSort(int[] arr) {
         int length = arr.length;
         int right;
-        for(int size = 1;size < length; size <<= 2){
+        for(int size = 1;size < length; size *= 2){
             for(int left = 0; left + size < length; left += 2* size){
                 right = left + 2 * size - 1;
                 if(right > length - 1) right = length - 1;
