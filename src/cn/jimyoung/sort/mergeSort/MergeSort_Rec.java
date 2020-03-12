@@ -4,6 +4,10 @@ package cn.jimyoung.sort.mergeSort;
  * 非递归归并排序
  */
 public class MergeSort_Rec {
+    //创建一个便于调用的函数
+    public static void mergeSort(int[] arr){
+        mergeSort(arr, 0, arr.length-1);
+    }
     //此函数用于先拆分数组，再合并
     //拆分是便于理解的说法，实际上是用left和right来控制当前进行需要操作的数组
     public static void mergeSort(int[] arr, int left, int right) {
