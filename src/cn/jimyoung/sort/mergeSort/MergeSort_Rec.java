@@ -16,12 +16,12 @@ public class MergeSort_Rec {
         mergeSort(arr, left, mid);
         mergeSort(arr, mid + 1, right);
         //两个拆分好的数组已经有序，现在可以合并到一起
-        merge(arr, left, right);
+        merge(arr, left, mid, right);
     }
 
     //此函数用于给数组排序，将有序的两部分数组合并成为一个有序的数组
-    public static void merge(int[] arr, int left, int right) {
-        int mid = (left + right) / 2;
+    //虽然函数名教merge，但是完成来merge和sort两个操作
+    public static void merge(int[] arr, int left, int mid, int right) {
         int i = left, j = mid + 1, k = 0;
         //开辟一个合并之后数组长度的数组
         int[] temp = new int[right - left + 1];
